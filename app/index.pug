@@ -1,0 +1,13 @@
+
+#app
+
+	.container
+
+		ul
+			li
+				router-link(:to=`{name:'home'}`) Home
+			li
+				router-link(:to=`{name:'about'}`) About
+		
+	transition(name="page" mode="out-in")
+		router-view
